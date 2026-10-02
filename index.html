@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Safwan | Cybersecurity Analyst & Security Operations</title>
+    <meta name="description" content="Resume website of Mohammad Safwan KP - Results-driven Cybersecurity Analyst with over 5 years of experience in Vulnerability Management, VAPT, and DevSecOps.">
+    <meta name="keywords" content="Cybersecurity Analyst, Vulnerability Management, VAPT, DevSecOps, eJPT, CEH, BNP Paribas, TCS, Ramboll">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            50: '#e6fff9',
+                            100: '#b3ffec',
+                            400: '#00f0ff',
+                            500: '#00d8e6',
+                            600: '#00a3b0',
+                            900: '#0a192f',
+                            950: '#060d17',
+                        },
+                        shield: {
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 transition-colors duration-300">
+
+    <!-- Cyber Background Grid Overlay -->
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-20 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+
+    <!-- Glowing Background Orbs -->
+    <div class="fixed top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none z-0"></div>
+    <div class="fixed bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Logo / Brand -->
+                <a href="#hero" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 p-[2px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all">
+                        <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved text-cyan-400 group-hover:scale-110 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">Safwan <span class="text-cyan-400">KP</span></span>
+                        <span class="block text-xs text-slate-400 font-mono">Cybersecurity Specialist</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <a href="#about" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/60 rounded-lg transition-all">About</a>
+                    <a href="#experience" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/60 rounded-lg transition-all">Experience</a>
+                    <a href="#skills" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/60 rounded-lg transition-all">Skills Matrix</a>
+                    <a href="#certifications" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/60 rounded-lg transition-all">Certifications</a>
+                    <a href="#education" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/60 rounded-lg transition-all">Education</a>
+                    <a href="#contact" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/60 rounded-lg transition-all">Contact</a>
+                </nav>
+
+                <!-- Actions (Theme Toggle & Resume Button) -->
+                <div class="flex items-center space-x-3">
+                    <button id="themeToggleBtn" aria-label="Toggle Theme" class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-slate-700 transition-all">
+                        <i class="fa-solid fa-moon dark:block hidden text-cyan-400"></i>
+                        <i class="fa-solid fa-sun dark:hidden block text-amber-400"></i>
+                    </button>
+                    
+                    <a href="Mohammad_Safwan-Resume-2026.pdf" target="_blank" download="Mohammad_Safwan_KP_Resume.pdf" class="inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-950 bg-cyan-400 hover:bg-cyan-300 rounded-xl shadow-lg shadow-cyan-500/25 transition-all hover:scale-105 active:scale-95">
+                        <i class="fa-solid fa-download mr-2"></i> Resume PDF
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuBtn" aria-label="Toggle Mobile Menu" class="md:hidden p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 hover:text-white">
+                        <i class="fa-solid fa-bars text-lg" id="menuOpenIcon"></i>
+                        <i class="fa-solid fa-xmark text-lg hidden" id="menuCloseIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobileMenu" class="hidden md:hidden border-b border-slate-800 bg-slate-950/95 backdrop-blur-xl px-4 pt-2 pb-6 space-y-2">
+            <a href="#about" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900">About</a>
+            <a href="#experience" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900">Experience</a>
+            <a href="#skills" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900">Skills Matrix</a>
+            <a href="#certifications" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900">Certifications</a>
+            <a href="#education" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900">Education</a>
+            <a href="#contact" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="relative z-10">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-[calc(100vh-5rem)] flex items-center justify-center py-12 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-mono">
+                            <span class="flex h-2 w-2 relative">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                            </span>
+                            <span>Currently Security Operations Analyst @ BNP Paribas</span>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-6xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                            MOHAMMAD <br class="hidden sm:inline" />
+                            <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">SAFWAN</span>
+                        </h1>
+
+                        <!-- Dynamic Typewriter Role -->
+                        <div class="h-8 font-mono text-lg sm:text-xl text-slate-300 flex items-center justify-center lg:justify-start">
+                            <span class="text-cyan-400 font-bold mr-2">&gt;</span>
+                            <span id="typewriterText" class="border-r-2 border-cyan-400 pr-1 animate-pulse"></span>
+                        </div>
+
+                        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                            Results-driven <strong class="text-white font-medium">Cybersecurity Analyst</strong> with over <span class="text-cyan-400 font-semibold">5+ years of experience</span> in Vulnerability Management, Penetration Testing (VAPT), and DevSecOps across global financial & engineering enterprises.
+                        </p>
+
+                        <!-- Highlights Badges -->
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-2">
+                            <span class="px-3 py-1 bg-slate-900/90 border border-slate-800 rounded-lg text-xs font-mono text-slate-300">
+                                <i class="fa-solid fa-location-dot text-cyan-400 mr-1.5"></i> Chennai, India
+                            </span>
+                            <span class="px-3 py-1 bg-slate-900/90 border border-slate-800 rounded-lg text-xs font-mono text-emerald-400">
+                                <i class="fa-solid fa-plane-departure mr-1.5"></i> EU Sponsorship Eligible
+                            </span>
+                            <span class="px-3 py-1 bg-slate-900/90 border border-slate-800 rounded-lg text-xs font-mono text-amber-400">
+                                <i class="fa-solid fa-certificate mr-1.5"></i> eJPT & CEH Certified
+                            </span>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#experience" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-xl shadow-cyan-500/20 transition-all transform hover:-translate-y-0.5 text-center">
+                                <i class="fa-solid fa-briefcase mr-2"></i> View Experience
+                            </a>
+                            <a href="#contact" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 hover:border-slate-600 font-semibold text-sm transition-all text-center">
+                                <i class="fa-solid fa-envelope text-cyan-400 mr-2"></i> Get In Touch
+                            </a>
+                        </div>
+
+                        <!-- Quick Social / Contact Links -->
+                        <div class="flex items-center justify-center lg:justify-start space-x-4 pt-4 text-slate-400">
+                            <a href="https://linkedin.com/in/mohammad-safwan-kp-653a81204" target="_blank" rel="noopener" class="p-3 bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:text-cyan-400 rounded-xl transition-all" title="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="mailto:kpsafwan10@gmail.com" class="p-3 bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:text-cyan-400 rounded-xl transition-all" title="Email Direct">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </a>
+                            <a href="tel:+919846197223" class="p-3 bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:text-cyan-400 rounded-xl transition-all" title="Call Phone">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Cyber Card / Interactive Terminal -->
+                    <div class="lg:col-span-5">
+                        <div class="relative max-w-md mx-auto">
+                            <!-- Glowing Frame -->
+                            <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 opacity-30 blur-lg transition duration-1000 group-hover:opacity-100"></div>
+                            
+                            <div class="relative bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-2xl backdrop-blur-xl">
+                                <!-- Terminal Header -->
+                                <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-3 h-3 rounded-full bg-rose-500"></div>
+                                        <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+                                        <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                                    </div>
+                                    <div class="text-xs font-mono text-slate-400 flex items-center">
+                                        <i class="fa-solid fa-terminal mr-2 text-cyan-400"></i> safwan@cyber-sec:~
+                                    </div>
+                                </div>
+
+                                <!-- Terminal Code Content -->
+                                <div class="font-mono text-xs sm:text-sm space-y-3 text-slate-300">
+                                    <p class="text-slate-400"><span class="text-emerald-400">user@secops</span>:<span class="text-blue-400">~</span>$ whoami</p>
+                                    <p class="text-cyan-400 font-semibold pl-2">&gt; Mohammad Safwan</p>
+
+                                    <p class="text-slate-400 pt-2"><span class="text-emerald-400">user@secops</span>:<span class="text-blue-400">~</span>$ cat security_profile.json</p>
+                                    <div class="bg-slate-950/80 p-3.5 rounded-lg border border-slate-800/80 text-xs overflow-x-auto text-slate-300">
+                                        <pre class="text-slate-300">{
+  <span class="text-cyan-400">"role"</span>: <span class="text-emerald-300">"Security Operations Analyst"</span>,
+  <span class="text-cyan-400">"current_org"</span>: <span class="text-emerald-300">"BNP Paribas"</span>,
+  <span class="text-cyan-400">"experience_yrs"</span>: <span class="text-amber-400">5+</span>,
+  <span class="text-cyan-400">"core_focus"</span>: [
+    <span class="text-emerald-300">"Vulnerability Management"</span>,
+    <span class="text-emerald-300">"VAPT (Web, API, Servers)"</span>,
+    <span class="text-emerald-300">"DevSecOps & CI/CD Security"</span>
+  ],
+  <span class="text-cyan-400">"certifications"</span>: [
+    <span class="text-cyan-300">"eJPT"</span>, <span class="text-cyan-300">"CEH v11"</span>, <span class="text-cyan-300">"AZ-900"</span>, <span class="text-cyan-300">"SC-900"</span>
+  ],
+  <span class="text-cyan-400">"status"</span>: <span class="text-emerald-400">"Available for EU Opportunities"</span>
+}</pre>
+                                    </div>
+
+                                    <!-- Interactive Command Run -->
+                                    <div class="pt-2 flex items-center justify-between text-xs text-slate-400">
+                                        <span><i class="fa-solid fa-circle-check text-emerald-400 mr-1"></i> Compliance: UK Cyber Essentials+</span>
+                                        <span class="text-cyan-400">v5.0 ACTIVE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Bar Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-8 border-t border-slate-800/80">
+                    <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-2xl text-center hover:border-cyan-500/40 transition-all">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-cyan-400 font-mono mb-1">5+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Years Experience</div>
+                    </div>
+                    <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-2xl text-center hover:border-cyan-500/40 transition-all">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-blue-400 font-mono mb-1">4</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Top Enterprises</div>
+                    </div>
+                    <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-2xl text-center hover:border-cyan-500/40 transition-all">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono mb-1">5</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Industry Certifications</div>
+                    </div>
+                    <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-2xl text-center hover:border-cyan-500/40 transition-all">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-amber-400 font-mono mb-1">100%</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">DevSecOps & VAPT Compliant</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About / Summary Section -->
+        <section id="about" class="py-16 md:py-24 border-t border-slate-800/60 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-3 mb-8">
+                    <span class="text-cyan-400 font-mono text-sm font-semibold">// 01</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Professional Summary</h2>
+                    <div class="h-px bg-slate-800 flex-1 ml-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    <!-- Bio Text Card -->
+                    <div class="lg:col-span-8 bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-4">
+                        <h3 class="text-xl font-bold text-white flex items-center">
+                            <i class="fa-solid fa-user-shield text-cyan-400 mr-3"></i>
+                            Securing Global Financial & Engineering Enterprises
+                        </h3>
+                        <p class="text-slate-300 leading-relaxed text-base">
+                            Results-driven <strong class="text-cyan-300">Cybersecurity Analyst</strong> with over 5 years of experience in <strong class="text-white">Vulnerability Management</strong>, <strong class="text-white">Penetration Testing (VAPT)</strong>, and <strong class="text-white">DevSecOps</strong> across global financial institutions and engineering leaders like <em>BNP Paribas</em>, <em>TCS</em>, and <em>Ramboll Group</em>.
+                        </p>
+                        <p class="text-slate-300 leading-relaxed text-base">
+                            Proven track record in automating complex security workflows, consolidating multi-region vulnerability data, conducting deep VAPT for web applications and APIs, and leading enterprise compliance initiatives such as <span class="text-emerald-400 font-medium">UK Cyber Essentials+</span>. Adept at stakeholder management and cross-functional collaboration within Agile environments.
+                        </p>
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-start space-x-3">
+                            <i class="fa-solid fa-earth-europe text-cyan-400 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Career Goal & Mobility</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Seeking to contribute cybersecurity expertise to European organisations prioritising robust security postures. Open to relocation and eligible for EU work visa sponsorship.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Highlights Grid -->
+                    <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+                        <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/40 transition-all flex-1">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-3">
+                                <i class="fa-solid fa-radar text-lg"></i>
+                            </div>
+                            <h4 class="text-base font-bold text-white mb-1">Vulnerability Management</h4>
+                            <p class="text-xs text-slate-400">Leading global server infrastructure VM, automated pipelines, real-time Power BI reporting, and ServiceNow VRM workflows.</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/40 transition-all flex-1">
+                            <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 mb-3">
+                                <i class="fa-solid fa-bug-slash text-lg"></i>
+                            </div>
+                            <h4 class="text-base font-bold text-white mb-1">VAPT & Pentesting</h4>
+                            <p class="text-xs text-slate-400">End-to-end VAPT for Web Apps, APIs, and servers across Black, Grey, and White Box methodologies following OWASP Top 10.</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-all flex-1">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-3">
+                                <i class="fa-solid fa-code-merge text-lg"></i>
+                            </div>
+                            <h4 class="text-base font-bold text-white mb-1">DevSecOps & CI/CD</h4>
+                            <p class="text-xs text-slate-400">Integrating DAST/SAST security controls into CI/CD pipelines using Docker, Jenkins, Kubernetes, SonarQube, and Burp Suite.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="py-16 md:py-24 border-t border-slate-800/60 bg-slate-950/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-3 mb-10">
+                    <span class="text-cyan-400 font-mono text-sm font-semibold">// 02</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Professional Experience</h2>
+                    <div class="h-px bg-slate-800 flex-1 ml-4"></div>
+                </div>
+
+                <!-- Timeline wrapper -->
+                <div class="relative border-l-2 border-slate-800 ml-4 sm:ml-8 space-y-12 pl-6 sm:pl-10">
+
+                    <!-- Role 1: BNP Paribas -->
+                    <div class="relative group">
+                        <!-- Timeline Dot -->
+                        <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-950 border-2 border-cyan-400 group-hover:scale-125 transition-transform flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-cyan-400"></div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="bg-slate-900/70 border border-slate-800 group-hover:border-cyan-500/40 rounded-2xl p-6 sm:p-8 transition-all shadow-lg">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                                <div>
+                                    <span class="inline-block px-3 py-1 bg-cyan-950 border border-cyan-500/30 text-cyan-400 text-xs font-mono rounded-md mb-2">Jul 2025 – Present</span>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-white">Security Operations Analyst</h3>
+                                    <h4 class="text-base text-cyan-400 font-medium mt-0.5">BNP Paribas <span class="text-slate-400 font-normal">(via Teamware Solutions)</span> • <span class="text-slate-400">Chennai, India</span></h4>
+                                </div>
+                                <div class="flex items-center space-x-2 self-start md:self-auto">
+                                    <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-full font-mono">Global Banking</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 text-slate-300 text-sm sm:text-base">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-cyan-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Global Infrastructure Vulnerability Management:</strong> Lead Vulnerability Management operations across global server infrastructure, coordinating remediation actions with international stakeholders.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-cyan-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Reporting Pipeline Automation:</strong> Automated end-to-end Vulnerability Management reporting pipeline, consolidating multi-region data to reduce reporting time significantly.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-cyan-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Power BI Executive Dashboard:</strong> Designed and deployed a global Power BI dashboard to provide real-time visibility into the Vulnerability Management programme.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-cyan-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Emergency Alert Triage:</strong> Monitored and triaged Emergency Vulnerability Alerts, prioritising critical assets in line with risk frameworks.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-cyan-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>DevSecOps Integration:</strong> Supported DevSecOps initiatives, integrating security controls into CI/CD pipelines.</span>
+                                </li>
+                            </ul>
+
+                            <!-- Tech Stack Badges -->
+                            <div class="flex flex-wrap gap-2 pt-6 mt-4 border-t border-slate-800">
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Vulnerability Management</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Power BI</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Automation</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">DevSecOps</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Risk Frameworks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 2: Tata Consultancy Services (TCS) -->
+                    <div class="relative group">
+                        <!-- Timeline Dot -->
+                        <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-950 border-2 border-blue-400 group-hover:scale-125 transition-transform flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-400"></div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="bg-slate-900/70 border border-slate-800 group-hover:border-blue-500/40 rounded-2xl p-6 sm:p-8 transition-all shadow-lg">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                                <div>
+                                    <span class="inline-block px-3 py-1 bg-blue-950 border border-blue-500/30 text-blue-400 text-xs font-mono rounded-md mb-2">Apr 2024 – Jul 2025</span>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-white">IT Analyst – Cybersecurity</h3>
+                                    <h4 class="text-base text-blue-400 font-medium mt-0.5">Tata Consultancy Services (TCS) • <span class="text-slate-400">Chennai, India</span></h4>
+                                </div>
+                                <div class="flex items-center space-x-2 self-start md:self-auto">
+                                    <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-full font-mono">Enterprise Consulting</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 text-slate-300 text-sm sm:text-base">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-blue-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Ramboll Engagement Continuity:</strong> Continued Ramboll engagement as an outsourced consultant, maintaining service continuity across all security functions.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-blue-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>VAPT Assessments:</strong> Performed Vulnerability Assessment and Penetration Testing (VAPT) for web applications, APIs, and enterprise servers.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-blue-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Enterprise VM Platforms:</strong> Operated industry-leading vulnerability management platforms: Rapid7 InsightVM, Microsoft Defender TVM, and Tenable Nessus.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-blue-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>DAST & SAST Reviews:</strong> Conducted DAST and SAST reviews, integrating security into development pipelines.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-blue-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Container Security:</strong> Contributed to DevSecOps processes including container and orchestration security (Docker, Jenkins, Kubernetes).</span>
+                                </li>
+                            </ul>
+
+                            <!-- Tech Stack Badges -->
+                            <div class="flex flex-wrap gap-2 pt-6 mt-4 border-t border-slate-800">
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Rapid7 InsightVM</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Defender TVM</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Tenable Nessus</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Docker</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Kubernetes</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 3: Ramboll Group -->
+                    <div class="relative group">
+                        <!-- Timeline Dot -->
+                        <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-950 border-2 border-emerald-400 group-hover:scale-125 transition-transform flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="bg-slate-900/70 border border-slate-800 group-hover:border-emerald-500/40 rounded-2xl p-6 sm:p-8 transition-all shadow-lg">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                                <div>
+                                    <span class="inline-block px-3 py-1 bg-emerald-950 border border-emerald-500/30 text-emerald-400 text-xs font-mono rounded-md mb-2">Nov 2022 – Apr 2024</span>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-white">Cyber & Information Security Analyst</h3>
+                                    <h4 class="text-base text-emerald-400 font-medium mt-0.5">Ramboll Group • <span class="text-slate-400">Chennai, India</span></h4>
+                                </div>
+                                <div class="flex items-center space-x-2 self-start md:self-auto">
+                                    <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-full font-mono">Global Engineering</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 text-slate-300 text-sm sm:text-base">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-emerald-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>End-to-End VAPT:</strong> Delivered end-to-end VAPT engagements covering web applications, APIs, network infrastructure (Black Box, Grey Box, White Box).</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-emerald-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Attack Surface Management:</strong> Managed External Attack Surface with Cycognito, proactively identifying and remediating exposed assets.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-emerald-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Tool Execution (DAST/SAST):</strong> Executed DAST with Burp Suite, OWASP ZAP, Kali Linux, Nmap, and Metasploit; SAST via SonarQube and JFrog Xray.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-emerald-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Malware & Incident Response:</strong> Conducted malware analysis and supported incident response activities.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-emerald-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>UK Cyber Essentials+ Audit Lead:</strong> Led preparation and successfully passed the UK Cyber Essentials+ audit, demonstrating regulatory compliance expertise.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-emerald-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>ServiceNow VRM Lifecycle:</strong> Managed vulnerability remediation lifecycle for computers, servers, and web applications using ServiceNow VRM.</span>
+                                </li>
+                            </ul>
+
+                            <!-- Tech Stack Badges -->
+                            <div class="flex flex-wrap gap-2 pt-6 mt-4 border-t border-slate-800">
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Burp Suite</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Cycognito</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">SonarQube</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">ServiceNow VRM</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Cyber Essentials+</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Kali Linux</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 4: UST Global -->
+                    <div class="relative group">
+                        <!-- Timeline Dot -->
+                        <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-950 border-2 border-purple-400 group-hover:scale-125 transition-transform flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-purple-400"></div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="bg-slate-900/70 border border-slate-800 group-hover:border-purple-500/40 rounded-2xl p-6 sm:p-8 transition-all shadow-lg">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                                <div>
+                                    <span class="inline-block px-3 py-1 bg-purple-950 border border-purple-500/30 text-purple-400 text-xs font-mono rounded-md mb-2">Jun 2021 – Nov 2022</span>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-white">Developer I – Software Engineering</h3>
+                                    <h4 class="text-base text-purple-400 font-medium mt-0.5">UST Global • <span class="text-slate-400">Thiruvananthapuram, India</span></h4>
+                                </div>
+                                <div class="flex items-center space-x-2 self-start md:self-auto">
+                                    <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-full font-mono">Software Engineering</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 text-slate-300 text-sm sm:text-base">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-purple-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Fraud Application Screening (FAS):</strong> Developed a Fraud Application Screening (FAS) module on the OutSystems low-code platform for Vanquis Bank.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-purple-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>API Hardening & Postman Testing:</strong> Integrated and tested multiple external APIs using Postman; hardened internally developed API endpoints.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-chevron-right text-purple-400 text-xs mt-1.5 mr-3 flex-shrink-0"></i>
+                                    <span><strong>Full-Stack Application Development:</strong> Built a nutrition management application using Angular, .NET, and SQL Server.</span>
+                                </li>
+                            </ul>
+
+                            <!-- Tech Stack Badges -->
+                            <div class="flex flex-wrap gap-2 pt-6 mt-4 border-t border-slate-800">
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">OutSystems</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Postman</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">Angular</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">.NET</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">SQL Server</span>
+                                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono rounded-md">API Security</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Technical Skills Matrix Section -->
+        <section id="skills" class="py-16 md:py-24 border-t border-slate-800/60 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-3 mb-8">
+                    <span class="text-cyan-400 font-mono text-sm font-semibold">// 03</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Technical Skills & Tools</h2>
+                    <div class="h-px bg-slate-800 flex-1 ml-4"></div>
+                </div>
+
+                <!-- Skill Filter Buttons & Search -->
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+                    <div class="flex flex-wrap gap-2" id="skillFilterContainer">
+                        <button data-filter="all" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/20 transition-all">All Skills</button>
+                        <button data-filter="vm" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900 text-slate-300 border border-slate-800 hover:text-cyan-400 hover:border-slate-700 transition-all">Vulnerability Mgmt</button>
+                        <button data-filter="vapt" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900 text-slate-300 border border-slate-800 hover:text-cyan-400 hover:border-slate-700 transition-all">VAPT & Pentesting</button>
+                        <button data-filter="devsecops" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900 text-slate-300 border border-slate-800 hover:text-cyan-400 hover:border-slate-700 transition-all">DevSecOps & Cloud</button>
+                        <button data-filter="tools" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900 text-slate-300 border border-slate-800 hover:text-cyan-400 hover:border-slate-700 transition-all">Tools & Scripting</button>
+                    </div>
+
+                    <div class="relative max-w-xs w-full">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                        <input type="text" id="skillSearchInput" placeholder="Search skill or tool..." class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-500 rounded-xl pl-9 pr-4 py-2 text-xs sm:text-sm text-slate-200 focus:outline-none transition-all">
+                    </div>
+                </div>
+
+                <!-- Skills Grid Container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="skillsGrid">
+
+                    <!-- Skill Card 1: Vulnerability Mgmt -->
+                    <div class="skill-card bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/40 transition-all" data-category="vm">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-shield-virus text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-white">Vulnerability Management</h3>
+                                <span class="text-xs text-slate-400 font-mono">Enterprise Scanning & Remediation</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Rapid7 InsightVM</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Microsoft Defender TVM</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Tenable Nessus</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">ServiceNow VRM</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Power BI Reporting</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 2: VAPT & Pentesting -->
+                    <div class="skill-card bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/40 transition-all" data-category="vapt">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400">
+                                <i class="fa-solid fa-crosshairs text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-white">VAPT & Pentesting</h3>
+                                <span class="text-xs text-slate-400 font-mono">Web, API & Infrastructure</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Web Applications VAPT</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">API Security Testing</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Black / Grey / White Box</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">OWASP Top 10</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Threat Modelling</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 3: DAST & SAST Tools -->
+                    <div class="skill-card bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-all" data-category="tools">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-bug text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-white">DAST / SAST & Testing Tools</h3>
+                                <span class="text-xs text-slate-400 font-mono">Dynamic & Static Assessment</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Burp Suite</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">OWASP ZAP</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Kali Linux & Nmap</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Metasploit</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">SonarQube</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">JFrog Xray</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 4: DevSecOps & Orchestration -->
+                    <div class="skill-card bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-purple-500/40 transition-all" data-category="devsecops">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-cubes text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-white">DevSecOps & Containers</h3>
+                                <span class="text-xs text-slate-400 font-mono">CI/CD Pipeline Security</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Docker</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Kubernetes</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Jenkins</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">GitHub & GitLab CI</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Container Security</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 5: Attack Surface & SIEM -->
+                    <div class="skill-card bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-amber-500/40 transition-all" data-category="tools">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400">
+                                <i class="fa-solid fa-tower-cell text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-white">Attack Surface & SIEM</h3>
+                                <span class="text-xs text-slate-400 font-mono">Monitoring & Intelligence</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Cycognito (EASM)</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Splunk SIEM</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Malware Analysis</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Incident Response</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">UK Cyber Essentials+</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 6: Cloud, Networking & Code -->
+                    <div class="skill-card bg-slate-900/60 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition-all" data-category="devsecops">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400">
+                                <i class="fa-solid fa-network-wired text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-white">Cloud, Networking & Scripting</h3>
+                                <span class="text-xs text-slate-400 font-mono">Infrastructure & Development</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Microsoft Azure (AZ-900)</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Azure Security (SC-900)</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Python (Proficient)</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">REST APIs, JSON, XML</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">TCP/IP, OSI, SSL/TLS, DNS</span>
+                            <span class="skill-tag px-3 py-1.5 bg-slate-950 border border-slate-800 text-slate-200 text-xs font-mono rounded-lg">Agile / Scrum Methodologies</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-16 md:py-24 border-t border-slate-800/60 bg-slate-950/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-3 mb-10">
+                    <span class="text-cyan-400 font-mono text-sm font-semibold">// 04</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Certifications</h2>
+                    <div class="h-px bg-slate-800 flex-1 ml-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Cert 1: eJPT -->
+                    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/50 transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-cyan-950 border border-cyan-500/30 text-cyan-400 text-xs font-mono rounded-lg">Practical Pentesting</span>
+                            <i class="fa-solid fa-award text-2xl text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">eJPT – Junior Penetration Tester</h3>
+                        <p class="text-xs text-slate-400 font-mono mt-1">INE Security / eLearnSecurity</p>
+                        <p class="text-slate-300 text-xs mt-3 leading-relaxed">Demonstrated practical hands-on proficiency in network assessment, vulnerability identification, web app security, and exploitation techniques.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-emerald-400 font-mono">
+                            <span><i class="fa-solid fa-circle-check mr-1"></i> Verified Credential</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2: CEH v11 -->
+                    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-blue-950 border border-blue-500/30 text-blue-400 text-xs font-mono rounded-lg">Ethical Hacking</span>
+                            <i class="fa-solid fa-user-ninja text-2xl text-blue-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-blue-300 transition-colors">CEH v11 – Certified Ethical Hacker</h3>
+                        <p class="text-xs text-slate-400 font-mono mt-1">EC-Council • ID: ECC6591730842</p>
+                        <p class="text-slate-300 text-xs mt-3 leading-relaxed">Comprehensive mastery of commercial-grade hacking tools, attack vectors, defensive controls, and ethical hacking methodology.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-emerald-400 font-mono">
+                            <span><i class="fa-solid fa-circle-check mr-1"></i> ECC6591730842</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3: AZ-900 -->
+                    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/50 transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-sky-500/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-sky-950 border border-sky-500/30 text-sky-400 text-xs font-mono rounded-lg">Cloud Fundamentals</span>
+                            <i class="fa-brands fa-microsoft text-2xl text-sky-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-sky-300 transition-colors">AZ-900 – Microsoft Azure Fundamentals</h3>
+                        <p class="text-xs text-slate-400 font-mono mt-1">Microsoft</p>
+                        <p class="text-slate-300 text-xs mt-3 leading-relaxed">Core understanding of Azure cloud services, security governance, architecture, compliance, and privacy standards.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-emerald-400 font-mono">
+                            <span><i class="fa-solid fa-circle-check mr-1"></i> Verified Credential</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4: SC-900 -->
+                    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-purple-500/50 transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-purple-950 border border-purple-500/30 text-purple-400 text-xs font-mono rounded-lg">Security & Compliance</span>
+                            <i class="fa-solid fa-shield text-2xl text-purple-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition-colors">SC-900 – Microsoft Security, Compliance & Identity</h3>
+                        <p class="text-xs text-slate-400 font-mono mt-1">Microsoft</p>
+                        <p class="text-slate-300 text-xs mt-3 leading-relaxed">Knowledge of Microsoft security solutions, identity access management, compliance frameworks, and threat protection.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-emerald-400 font-mono">
+                            <span><i class="fa-solid fa-circle-check mr-1"></i> Verified Credential</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 5: Scrum Master -->
+                    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-amber-500/50 transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-amber-950 border border-amber-500/30 text-amber-400 text-xs font-mono rounded-lg">Agile Methodology</span>
+                            <i class="fa-solid fa-people-group text-2xl text-amber-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition-colors">Registered Scrum Team Member</h3>
+                        <p class="text-xs text-slate-400 font-mono mt-1">Scrum Inc.</p>
+                        <p class="text-slate-300 text-xs mt-3 leading-relaxed">Proficiency in Agile software development workflows, sprint planning, cross-functional team collaboration, and iterative delivery.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-emerald-400 font-mono">
+                            <span><i class="fa-solid fa-circle-check mr-1"></i> Verified Credential</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Education & Additional Information Section -->
+        <section id="education" class="py-16 md:py-24 border-t border-slate-800/60 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-3 mb-10">
+                    <span class="text-cyan-400 font-mono text-sm font-semibold">// 05</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Education & Global Mobility</h2>
+                    <div class="h-px bg-slate-800 flex-1 ml-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <!-- Education Card -->
+                    <div class="lg:col-span-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-graduation-cap text-lg"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-cyan-400 font-mono">Degree Program</span>
+                                    <h3 class="text-lg font-bold text-white">B.Tech – Electronics & Communications Engineering</h3>
+                                </div>
+                            </div>
+
+                            <p class="text-slate-300 text-sm font-medium mt-2">MES College of Engineering</p>
+                            <p class="text-xs text-slate-400 font-mono mt-0.5">Kuttipuram, Kerala, India • 2016 – 2020</p>
+                            <p class="text-xs text-slate-400 mt-4 leading-relaxed">Focus on digital communications, network protocols, embedded systems, microprocessors, signal processing, and computer networking principles.</p>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                            <span><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Full-Time 4-Year Engineering Degree</span>
+                            <span class="font-mono text-cyan-400">Graduated 2020</span>
+                        </div>
+                    </div>
+
+                    <!-- Additional Details Card (Languages & Work Auth) -->
+                    <div class="lg:col-span-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
+                        <!-- Languages -->
+                        <div>
+                            <h3 class="text-base font-bold text-white mb-3 flex items-center">
+                                <i class="fa-solid fa-language text-cyan-400 mr-2.5 text-lg"></i> Languages Spoken
+                            </h3>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex justify-between text-xs font-mono mb-1">
+                                        <span class="text-slate-200">English</span>
+                                        <span class="text-cyan-400">Professional Working Proficiency</span>
+                                    </div>
+                                    <div class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
+                                        <div class="w-[95%] h-full bg-cyan-400 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs font-mono mb-1">
+                                        <span class="text-slate-200">Malayalam</span>
+                                        <span class="text-emerald-400">Native / Mother Tongue</span>
+                                    </div>
+                                    <div class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
+                                        <div class="w-[100%] h-full bg-emerald-400 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs font-mono mb-1">
+                                        <span class="text-slate-200">Spanish</span>
+                                        <span class="text-amber-400">Beginner (Learning)</span>
+                                    </div>
+                                    <div class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
+                                        <div class="w-[30%] h-full bg-amber-400 rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work Authorization & Availability -->
+                        <div class="pt-4 border-t border-slate-800 space-y-3">
+                            <h3 class="text-base font-bold text-white flex items-center">
+                                <i class="fa-solid fa-passport text-cyan-400 mr-2.5 text-lg"></i> Relocation & Availability
+                            </h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                                    <span class="text-slate-400 font-mono block">Work Authorization</span>
+                                    <span class="text-emerald-400 font-medium block mt-1"><i class="fa-solid fa-earth-europe mr-1"></i> Open to relocation; eligible for EU work visa sponsorship.</span>
+                                </div>
+                                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                                    <span class="text-slate-400 font-mono block">Notice Period</span>
+                                    <span class="text-cyan-400 font-medium block mt-1"><i class="fa-solid fa-clock mr-1"></i> Available upon reasonable notice.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 border-t border-slate-800/60 bg-slate-950/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-3 mb-10">
+                    <span class="text-cyan-400 font-mono text-sm font-semibold">// 06</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Get In Touch</h2>
+                    <div class="h-px bg-slate-800 flex-1 ml-4"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Direct Contact Info</h3>
+                            <p class="text-slate-300 text-sm">Feel free to reach out directly via email, phone, or LinkedIn for job opportunities, consulting, or cybersecurity discussions.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <!-- Email Copy Box -->
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col justify-between space-y-3 group">
+                                <div class="flex items-center space-x-3 overflow-hidden">
+                                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 flex-shrink-0">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="truncate">
+                                        <span class="text-xs text-slate-400 font-mono block">Email</span>
+                                        <a href="mailto:kpsafwan10@gmail.com" class="text-sm font-semibold text-slate-200 hover:text-cyan-400 truncate block">kpsafwan10@gmail.com</a>
+                                    </div>
+                                </div>
+                                <button onclick="copyToClipboard('kpsafwan10@gmail.com', 'Email copied!')" class="w-full py-2 bg-slate-900 hover:bg-cyan-500/20 text-slate-400 hover:text-cyan-400 border border-slate-800 hover:border-cyan-500/40 rounded-lg text-xs font-mono transition-all flex items-center justify-center">
+                                    <i class="fa-regular fa-copy mr-1.5"></i> Copy Email
+                                </button>
+                            </div>
+
+                            <!-- Phone Copy Box -->
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col justify-between space-y-3 group">
+                                <div class="flex items-center space-x-3 overflow-hidden">
+                                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="truncate">
+                                        <span class="text-xs text-slate-400 font-mono block">Phone</span>
+                                        <a href="tel:+919846197223" class="text-sm font-semibold text-slate-200 hover:text-emerald-400 truncate block">+91 9846197223</a>
+                                    </div>
+                                </div>
+                                <button onclick="copyToClipboard('+919846197223', 'Phone copied!')" class="w-full py-2 bg-slate-900 hover:bg-emerald-500/20 text-slate-400 hover:text-emerald-400 border border-slate-800 hover:border-emerald-500/40 rounded-lg text-xs font-mono transition-all flex items-center justify-center">
+                                    <i class="fa-regular fa-copy mr-1.5"></i> Copy Phone
+                                </button>
+                            </div>
+
+                            <!-- LinkedIn Box -->
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col justify-between space-y-3 group">
+                                <div class="flex items-center space-x-3 overflow-hidden">
+                                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 flex-shrink-0">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                    <div class="truncate">
+                                        <span class="text-xs text-slate-400 font-mono block">LinkedIn</span>
+                                        <a href="https://linkedin.com/in/mohammad-safwan-kp-653a81204" target="_blank" rel="noopener" class="text-sm font-semibold text-slate-200 hover:text-blue-400 truncate block">Mohammad Safwan</a>
+                                    </div>
+                                </div>
+                                <a href="https://linkedin.com/in/mohammad-safwan-kp-653a81204" target="_blank" rel="noopener" class="w-full py-2 bg-slate-900 hover:bg-blue-500/20 text-slate-400 hover:text-blue-400 border border-slate-800 hover:border-blue-500/40 rounded-lg text-xs font-mono transition-all flex items-center justify-center">
+                                    <i class="fa-solid fa-arrow-up-right-from-square mr-1.5"></i> Visit Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-8 text-center text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © <span id="currentYear">2026</span> Mohammad Safwan. All rights reserved.
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="Mohammad_Safwan-Resume-2026.pdf" target="_blank" class="hover:text-cyan-400 transition-colors">Resume PDF</a>
+                <span>•</span>
+                <a href="#hero" class="hover:text-cyan-400 transition-colors">Back to Top <i class="fa-solid fa-arrow-up ml-1"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Box -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-slate-900 border border-cyan-500/50 text-cyan-400 px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 text-sm font-mono">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toastMessage">Notification</span>
+    </div>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>

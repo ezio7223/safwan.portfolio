@@ -1,0 +1,104 @@
+/* Custom CSS Extensions for Mohammad Safwan KP Resume Website */
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #060d17;
+}
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00f0ff;
+}
+
+/* Glassmorphism & Cyber Glows */
+.glass-card {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cyber-glow {
+    box-shadow: 0 0 25px -5px rgba(0, 240, 255, 0.25);
+}
+
+/* Light Theme Overrides */
+html.light body {
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+html.light header {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color: #e2e8f0;
+}
+
+html.light header span, html.light header a {
+    color: #0f172a;
+}
+
+html.light .bg-slate-950 {
+    background-color: #ffffff;
+}
+
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900 {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+html.light .border-slate-800,
+html.light .border-slate-800\/80,
+html.light .border-slate-800\/60 {
+    border-color: #e2e8f0;
+}
+
+html.light .text-slate-300,
+html.light .text-slate-400 {
+    color: #334155;
+}
+
+html.light .text-white {
+    color: #0f172a;
+}
+
+html.light .bg-slate-950\/80 {
+    background-color: #ffffff;
+}
+
+/* Print Styling */
+@media print {
+    header, footer, #themeToggleBtn, #mobileMenuBtn, #toast, .cyber-glow, button {
+        display: none !important;
+    }
+
+    body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 12pt;
+    }
+
+    .border-slate-800, .bg-slate-900, .bg-slate-950 {
+        background: #ffffff !important;
+        border-color: #cccccc !important;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000000 !important;
+    }
+}
